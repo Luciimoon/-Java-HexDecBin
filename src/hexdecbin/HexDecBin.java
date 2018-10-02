@@ -11,6 +11,8 @@ public class HexDecBin {
 
 	public void getHexNumber() {
 
+		System.out.println("Welcome to Mitchell's HexDecBin converter!");
+
 		System.out.println("Enter starting base");
 
 		S_base = kbd.nextLine().toLowerCase();
@@ -38,6 +40,11 @@ public class HexDecBin {
 				String convert = Integer.toString(Integer.parseInt(num, 16));
 				System.out.println(Integer.toString(Integer.parseInt(convert), 2));
 
+			} else if (E_base.equals("oct")) {
+
+				String convert = Integer.toString(Integer.parseInt(num, 16));
+				System.out.println(Integer.toString(Integer.parseInt(convert), 8));
+
 			}
 
 		} else if (S_base.equals("dec")) {
@@ -47,6 +54,10 @@ public class HexDecBin {
 
 			} else if (E_base.equals("bin")) {
 				System.out.println(Integer.toString(Integer.parseInt(num), 2));
+
+			} else if (E_base.equals("oct")) {
+
+				System.out.println(Integer.toString(Integer.parseInt(num), 8));
 
 			}
 
@@ -60,7 +71,14 @@ public class HexDecBin {
 			} else if (E_base.equals("dec")) {
 				System.out.println(Integer.parseInt(num, 2));
 
+			} else if (E_base.equals("oct")) {
+
+				String convert = Integer.toString(Integer.parseInt(num, 2));
+				System.out.println(Integer.toString(Integer.parseInt(convert), 8));
+
 			}
+
+		} else if (S_base.equals("oct")) {
 
 		} else {
 			System.out.println("good job you broke everything, now i gotta exit the program");
