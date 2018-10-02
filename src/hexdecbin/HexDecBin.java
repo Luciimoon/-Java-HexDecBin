@@ -79,6 +79,23 @@ public class HexDecBin {
 			}
 
 		} else if (S_base.equals("oct")) {
+			
+			if (E_base.equals("hex")) {
+
+				String convert = Integer.toString(Integer.parseInt(num, 2));
+				System.out.println(Integer.toHexString(Integer.parseInt(convert)));
+
+			} else if (E_base.equals("dec")) {
+				System.out.println(Integer.toString(Integer.parseInt(num), 8));
+
+			} else if (E_base.equals("bin")) {
+
+				String convert = Integer.toString(Integer.parseInt(num, 2));
+				System.out.println(Integer.toString(Integer.parseInt(convert), 8));
+			}
+			
+			
+			
 
 		} else {
 			System.out.println("good job you broke everything, now i gotta exit the program");
@@ -87,5 +104,6 @@ public class HexDecBin {
 		}
 
 	}
-
 }
+
+
