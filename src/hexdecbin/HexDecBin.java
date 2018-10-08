@@ -6,7 +6,6 @@ public class HexDecBin {
 
 	Scanner kbd = new Scanner(System.in);
 	String S_base, S_num, E_base;
-
 	int num;
 
 	public void getHexNumber() {
